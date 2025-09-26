@@ -10,5 +10,6 @@ runs:
   using: "composite"
   steps:
     - name: Log message
-      run: echo "Message: ${{ inputs.message }}"
+      run: |
+        echo "Message: ${{ inputs.message }}"
       shell: bash
